@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Math-Problems Sharing Program}
+\author{RiMuTuYuan \\
+    1834702545@qq.com\\
+Qingdao University of Science and Technology}
+\date{April 2023}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+\tableofcontents
+\section{Introduction}
+
+\section{p-limit}
+    \newpage
+    \subsection{no.1}
+    [14/4/2023 LiYongHuan sharing]\\
+        \textbf{P:}\\
+        \begin{large}
+        $\lim_{n\to \infty}\frac{\sqrt[n]{n!}}{n}$
+        \end{large}\\ \\
+        \textbf{S:}\\
+        \begin{large}
+        $\lim_{n\to \infty}e^{\frac{1}{n}ln(\frac{1*2*3*...*n}{n*n*n...n})}$\\
+        $=e^{\lim_{n\to \infty}\frac{1}{n}\sum_{k=1}^{n}ln(\frac{k}{n})}$\\
+        $=e^{\int_{0}^{1}ln(x)d_{x}}$\\
+        $=e^{xln(x)|_{0}^{1}-\int_{0}^{1}x*\frac{1}{x}}$\\
+        $=e^{-1}$
+        \end{large}
+
+        \subsection{no.2}
+         [14/4/2023 LiuWeiXiong sharing]\\
+        \textbf{P:}\\
+        \begin{large}
+        $\lim_{x\to 0}\frac{ln(1+\arcsin(x))-ln(1+\tan(x))}{x^{3}}$
+        \end{large}\\ \\
+        \textbf{S:}\\
+        \begin{large}
+        $\lim_{x\to 0}\frac{ln(1+\arcsin(x))-ln(1+\tan(x))}{x^{3}}$\\
+        $=\lim_{x\to 0}\frac{1}{1+\xi}\frac{\arcsin(x)-\tan(x)}{x^{3}}$\\
+        $=\lim_{x \to 0}\frac{\arcsin(x)-x-(\tan(x)-x)}{x^{3}}$\\
+        $=\lim_{x \to 0}\frac{[(1-x^{2})^{-\frac{1}{2}}-1]-[\sec(x)^{2}-1]}{3x^{2}}$\\
+        $=\lim_{x\to 0}\frac{-\frac{1}{2}(-x^{2})-\tan(x)^{2}}{3x^{2}}$\\
+        $=-\frac{1}{6}$
+        \end{large}
+\end{document}
